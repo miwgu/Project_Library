@@ -1,0 +1,71 @@
+.bg {
+    -fx-background-image: url("../img/library.jpg");
+    -fx-background-insets: -20, -10;
+    -fx-background-position: left top, center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover, auto;
+}
+
+.bgHome {
+    -fx-background-image: url("../img/books.jpg");
+    -fx-background-insets: -20, -10;
+    -fx-background-position: left top, center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover, auto;
+}
+
+.active {
+    -fx-text-fill: #ce5f5f;
+}
+
+.table-view .column-header,
+.table-view .column-header-background .filler {
+    -fx-background-color:   #b6cad5;
+}
+.table-view .column-header .label{
+    -fx-font-weight: bold;
+    -fx-alignment: CENTER_LEFT;
+}
+.table-view .cell:odd{
+    -fx-alignment: center-left;
+    -fx-background-color: #d6d9de;
+    -fx-alignment: CENTER_LEFT;
+}
+
+.table-view .cell{
+    -fx-alignment: center-left;
+    -fx-background-color: #e2e2e2;
+    -fx-alignment: CENTER_LEFT;
+}
+
+.table-row-cell:selected .table-cell {
+    -fx-background-color: #404d5c;
+    -fx-background-insets: 0;
+}
+
+.table-view .cell:empty {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.table-view *.scroll-bar:horizontal *.increment-button,
+.table-view *.scroll-bar:horizontal *.decrement-button {
+    -fx-background-color: null;
+    -fx-background-radius: 0;
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+}
+
+.table-view *.scroll-bar:horizontal *.increment-arrow,
+.table-view *.scroll-bar:horizontal *.decrement-arrow {
+    -fx-background-color: null;
+    -fx-background-radius: 0;
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+    -fx-shape: null;
+}
+
+
+
+
+

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="modalPane" prefHeight="700.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.Controller.Modal">
+   <children>
+      <BorderPane prefHeight="600.0" prefWidth="1000.0">
+         <top>
+            <Pane prefHeight="57.0" prefWidth="800.0" style="-fx-background-color: #0b293c#0b293c;" BorderPane.alignment="CENTER">
+               <children>
+                  <Text fill="WHITE" layoutX="14.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nackademin Bibliotek">
+                     <font>
+                        <Font name="Euphemia UCAS" size="23.0" />
+                     </font>
+                  </Text>
+                  <Button fx:id="closeBtn" layoutX="934.0" layoutY="12.0" mnemonicParsing="false" onAction="#closeModal" style="-fx-background-color: transparent;">
+                     <graphic>
+                        <Line endX="-77.50701904296875" endY="22.317054748535156" startX="-98.8751220703125" startY="3.619985580444336" stroke="WHITE" strokeWidth="3.0" />
+                     </graphic>
+                  </Button>
+                  <Line endX="-78.842529296875" endY="25.065153121948242" layoutX="1044.0" layoutY="-5.0" startX="-99.6385498046875" startY="43.7222785949707" stroke="WHITE" strokeWidth="3.0" />
+
+               </children>
+            </Pane>
+         </top>
+         <center>
+            <Pane maxHeight="700.0" maxWidth="920.0" minHeight="620.0" prefHeight="700.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+               <children>
+                  <GridPane layoutX="12.0" layoutY="39.0" prefHeight="565.0" prefWidth="908.0" style="-fx-grid-lines-visible: true;">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="217.207275390625" minWidth="0.0" prefWidth="172.24371337890625" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="781.2870788574219" minWidth="10.0" prefWidth="735.7562866210938" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints maxHeight="64.17085266113281" minHeight="10.0" prefHeight="54.38725280761719" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="81.765380859375" minHeight="10.0" prefHeight="32.61274719238281" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="77.7471923828125" minHeight="10.0" prefHeight="52.41456604003906" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="84.58543395996094" minHeight="10.0" prefHeight="39.603668212890625" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="88.14352416992188" minHeight="10.0" prefHeight="44.207305908203125" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="134.97265625" minHeight="10.0" prefHeight="106.59451293945312" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="62.56719970703125" minHeight="10.0" prefHeight="42.40545654296875" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="56.1890869140625" minHeight="10.0" prefHeight="41.59454345703125" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="48.189056396484375" minHeight="10.0" prefHeight="41.8109130859375" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="44.38726806640625" minHeight="10.0" prefHeight="38.00909423828125" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="35.99090576171875" minHeight="10.0" prefHeight="33.6036376953125" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Label text="Title" textFill="#575757">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets left="10.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <Label text="ISBN" textFill="#575757" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets left="10.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <Label text="Author" textFill="#575757" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets left="10.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <Label text="Category" textFill="#575757" GridPane.rowIndex="3">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets left="10.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <Label text="Language" textFill="#575757" GridPane.rowIndex="4">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets left="10.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <Label text="Description" textFill="#575757" GridPane.rowIndex="5">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets left="10.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <Label text="Publisher" textFill="#575757" GridPane.rowIndex="6">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets left="10.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <Label text="Edition" textFill="#575757" GridPane.rowIndex="7">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets left="10.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <Label text="Release Date" textFill="#575757" GridPane.rowIndex="8">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets left="10.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <Label text="Number of pages" textFill="#575757" GridPane.rowIndex="9">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets left="10.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <Label prefHeight="16.0" prefWidth="143.0" text="Number of books" textFill="#575757" GridPane.rowIndex="10">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets left="10.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <TextField fx:id="title" editable="false" prefHeight="51.0" prefWidth="736.0" style="-fx-border-color: transparent; -fx-background-color: transparent;" GridPane.columnIndex="1" />
+                        <TextField fx:id="isbn" editable="false" prefHeight="51.0" prefWidth="736.0" style="-fx-border-color: transparent; -fx-background-color: transparent;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <TextField fx:id="author" editable="false" prefHeight="51.0" prefWidth="736.0" style="-fx-border-color: transparent; -fx-background-color: transparent;" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <TextField fx:id="category" editable="false" prefHeight="51.0" prefWidth="736.0" style="-fx-border-color: transparent; -fx-background-color: transparent;" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <TextField fx:id="language" editable="false" prefHeight="51.0" prefWidth="736.0" style="-fx-border-color: transparent; -fx-background-color: transparent;" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                        <TextField fx:id="publisher" editable="false" prefHeight="107.0" prefWidth="736.0" style="-fx-border-color: transparent; -fx-background-color: transparent;" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                        <TextField fx:id="edition" editable="false" prefHeight="107.0" prefWidth="736.0" style="-fx-border-color: transparent; -fx-background-color: transparent;" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                        <TextField fx:id="releaseDate" editable="false" prefHeight="107.0" prefWidth="736.0" style="-fx-border-color: transparent; -fx-background-color: transparent;" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                        <TextField fx:id="numberOfPages" editable="false" prefHeight="107.0" prefWidth="736.0" style="-fx-border-color: transparent; -fx-background-color: transparent;" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                        <TextField fx:id="available" editable="false" prefHeight="107.0" prefWidth="736.0" style="-fx-border-color: transparent; -fx-background-color: transparent;" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+                        <TextArea fx:id="description" prefHeight="200.0" prefWidth="200.0" style="-fx-control-inner-background: transparent; -fx-text-fill: #4d4d4d;" stylesheets="@../css/style.css" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                     </children>
+                  </GridPane>
+               </children>
+            </Pane>
+         </center></BorderPane>
+      <Pane layoutX="-1.0" layoutY="681.0" prefHeight="30.0" prefWidth="1000.0" style="-fx-background-color: #0b293c;">
+         <children>
+            <Text fill="WHITE" layoutX="100.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nackademin Bibliotek" textAlignment="CENTER" wrappingWidth="799.3717956542969">
+               <font>
+                  <Font name="Khmer MN" size="11.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

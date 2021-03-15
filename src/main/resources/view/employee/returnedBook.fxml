@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="returnedBookPane" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.Controller.Employee.ReturnedBook">
+   <children>
+      <BorderPane prefHeight="600.0" prefWidth="1000.0">
+         <top>
+            <Pane prefHeight="57.0" prefWidth="800.0" style="-fx-background-color: #0b293c#0b293c;" BorderPane.alignment="CENTER">
+               <children>
+                  <Text fill="WHITE" layoutX="14.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nackademin Bibliotek">
+                     <font>
+                        <Font name="Euphemia UCAS" size="23.0" />
+                     </font>
+                  </Text>
+                  <ButtonBar layoutX="240.0" layoutY="9.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="40.0" prefWidth="740.0">
+                    <buttons>
+                        <Button fx:id="LogOut" alignment="CENTER" contentDisplay="TOP" maxWidth="79.0" minWidth="30.0" mnemonicParsing="false" onAction="#goToLogOut" prefHeight="28.0" prefWidth="30.0" style="-fx-background-color: transparent;" text="Log out" textFill="WHITE">
+                           <font>
+                              <Font name="Euphemia UCAS" size="13.0" />
+                           </font>
+                        </Button>
+                    </buttons>
+                  </ButtonBar>
+               </children>
+            </Pane>
+         </top>
+         <bottom>
+            <Pane prefHeight="30.0" prefWidth="800.0" style="-fx-background-color: #0b293c;" BorderPane.alignment="CENTER">
+               <children>
+                  <Text fill="WHITE" layoutX="30.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nackademin Bibliotek" textAlignment="CENTER" wrappingWidth="799.3717956542969" x="80.0">
+                     <font>
+                        <Font name="Khmer MN" size="11.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+         </bottom>
+         <left>
+            <VBox prefHeight="513.0" prefWidth="208.0" style="-fx-background-color: #536c85;" BorderPane.alignment="CENTER">
+               <children>
+                <Button fx:id="employeeTop" maxWidth="210.0" minWidth="20.0" mnemonicParsing="false" onAction="#goToEmployeeTop" prefHeight="28.0" style="-fx-background-color: transparent;" stylesheets="@../../css/style.css" text="Top" textFill="WHITE" textOverrun="CLIP">
+                     <font>
+                        <Font name="Euphemia UCAS" size="14.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" top="10.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefWidth="300.0" style="-fx-background-color: transparent;" styleClass="active" stylesheets="@../../css/style.css" text="Register" textFill="WHITE">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets right="40.0" top="10.0" />
+                     </padding>
+                     <font>
+                        <Font name="Euphemia UCAS" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="lendOut" alignment="TOP_RIGHT" contentDisplay="TOP" maxWidth="190.0" mnemonicParsing="false" onAction="#goToLendOut" style="-fx-background-color: transparent;" stylesheets="@../../css/style.css" text="Checkout Books" textAlignment="RIGHT" textFill="WHITE">
+                     <padding>
+                        <Insets bottom="10.0" top="10.0" />
+                     </padding>
+                     <font>
+                        <Font name="Euphemia UCAS" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="returned" alignment="TOP_RIGHT" contentDisplay="TOP" maxWidth="190.0" mnemonicParsing="false" onAction="#goToReturned" style="-fx-background-color: transparent;" styleClass="active" stylesheets="@../../css/style.css" text="Returned Books" textAlignment="RIGHT" textFill="WHITE">
+                     <padding>
+                        <Insets bottom="10.0" top="10.0" />
+                     </padding>
+                     <font>
+                        <Font name="Euphemia UCAS" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="bookManage" contentDisplay="TOP" minWidth="210.0" mnemonicParsing="false" onAction="#goToBookManage" prefWidth="210.0" style="-fx-background-color: transparent;" text="Book manage" textFill="#fffbfb">
+                     <font>
+                        <Font name="Euphemia UCAS" size="14.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" top="10.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="userManage" contentDisplay="TOP" minWidth="210.0" mnemonicParsing="false" onAction="#goToUserManage" prefWidth="210.0" style="-fx-background-color: transparent;" text="User manage" textFill="#fffbfb">
+                     <font>
+                        <Font name="Euphemia UCAS" size="14.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" top="10.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="registerBooks" contentDisplay="TOP" minWidth="210.0" mnemonicParsing="false" onAction="#goToRegisterBooks" prefWidth="210.0" style="-fx-background-color: transparent;" text="Register books" textFill="#fffbfb">
+                     <font>
+                        <Font name="Euphemia UCAS" size="14.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" top="10.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="registerUser" contentDisplay="TOP" minWidth="210.0" mnemonicParsing="false" onAction="#goToRegisterUser" prefWidth="210.0" style="-fx-background-color: transparent;" text="Register user" textFill="#fffbfb">
+                     <font>
+                        <Font name="Euphemia UCAS" size="14.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" top="10.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="search" contentDisplay="TOP" maxWidth="30.0" minWidth="210.0" mnemonicParsing="false" onAction="#goToEmployeeSearch" prefWidth="210.0" style="-fx-background-color: transparent;" text="Search" textFill="#fffbfb">
+                     <font>
+                        <Font name="Euphemia UCAS" size="14.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" top="10.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+         </left>
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Text layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Returned Book" textAlignment="CENTER" wrappingWidth="790.2060546875">
+                     <font>
+                        <Font name="Euphemia UCAS" size="24.0" />
+                     </font>
+                  </Text>
+                  <GridPane layoutX="176.0" layoutY="112.0" prefHeight="115.0" prefWidth="485.0" vgap="8.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="237.46820068359375" minWidth="10.0" prefWidth="100.173095703125" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="384.826904296875" minWidth="10.0" prefWidth="384.826904296875" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Text fill="#363636" strokeType="OUTSIDE" strokeWidth="0.0" text="SSN" />
+                        <Text fill="#363636" strokeType="OUTSIDE" strokeWidth="0.0" text="ISBN" GridPane.rowIndex="1" />
+                        <TextField fx:id="ssn" prefHeight="27.0" prefWidth="374.0" promptText="ÅÅMMDDXXXX" GridPane.columnIndex="1" />
+                        <TextField fx:id="isbn" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                     </children>
+                  </GridPane>
+                  <Button fx:id="regiBtn" layoutX="580.0" layoutY="250.0" mnemonicParsing="false" onAction="#retunredAction" prefHeight="27.0" prefWidth="80.0" style="-fx-background-color: #ce5f5f#ce5f5f;" text="Register" textFill="WHITE" />
+                  <Text fx:id="message" fill="RED" layoutX="183.0" layoutY="268.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="380.0" />
+               </children>
+            </AnchorPane>
+         </center></BorderPane>
+   </children>
+</AnchorPane>

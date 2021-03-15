@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="registerUserPane" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.Controller.Employee.RegisterUser">
+   <children>
+      <BorderPane prefHeight="600.0" prefWidth="1000.0">
+         <top>
+            <Pane prefHeight="57.0" prefWidth="800.0" style="-fx-background-color: #0b293c#0b293c;" BorderPane.alignment="CENTER">
+               <children>
+                  <Text fill="WHITE" layoutX="14.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nackademin Bibliotek">
+                     <font>
+                        <Font name="Euphemia UCAS" size="23.0" />
+                     </font>
+                  </Text>
+                  <ButtonBar layoutX="240.0" layoutY="9.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="40.0" prefWidth="740.0">
+                    <buttons>
+                        <Button fx:id="LogOut" alignment="CENTER" contentDisplay="TOP" maxWidth="79.0" minWidth="30.0" mnemonicParsing="false" onAction="#goToLogOut" prefHeight="28.0" prefWidth="30.0" style="-fx-background-color: transparent;" text="Log out" textFill="WHITE">
+                           <font>
+                              <Font name="Euphemia UCAS" size="13.0" />
+                           </font>
+                        </Button>
+                    </buttons>
+                  </ButtonBar>
+               </children>
+            </Pane>
+         </top>
+         <bottom>
+            <Pane prefHeight="30.0" prefWidth="800.0" style="-fx-background-color: #0b293c;" BorderPane.alignment="CENTER">
+               <children>
+                  <Text fill="WHITE" layoutX="30.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nackademin Bibliotek" textAlignment="CENTER" wrappingWidth="799.3717956542969" x="80.0">
+                     <font>
+                        <Font name="Khmer MN" size="11.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+         </bottom>
+         <left>
+            <VBox prefHeight="513.0" prefWidth="208.0" style="-fx-background-color: #536c85;" BorderPane.alignment="CENTER">
+               <children>
+                <Button fx:id="employeeTop" maxWidth="210.0" minWidth="20.0" mnemonicParsing="false" onAction="#goToEmployeeTop" prefHeight="28.0" style="-fx-background-color: transparent;" stylesheets="@../../css/style.css" text="Top" textFill="WHITE" textOverrun="CLIP">
+                     <font>
+                        <Font name="Euphemia UCAS" size="14.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" top="10.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefWidth="300.0" style="-fx-background-color: transparent;" text="Register" textFill="WHITE">
+                     <padding>
+                        <Insets right="40.0" top="10.0" />
+                     </padding>
+                     <font>
+                        <Font name="Euphemia UCAS" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="lendOut" alignment="TOP_RIGHT" contentDisplay="TOP" maxWidth="190.0" mnemonicParsing="false" onAction="#goToLendOut" style="-fx-background-color: transparent;" text="Lend out Books" textAlignment="RIGHT" textFill="WHITE">
+                     <padding>
+                        <Insets bottom="10.0" top="10.0" />
+                     </padding>
+                     <font>
+                        <Font name="Euphemia UCAS" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="returned" alignment="TOP_RIGHT" contentDisplay="TOP" maxWidth="190.0" mnemonicParsing="false" onAction="#goToReturned" style="-fx-background-color: transparent;" text="Returned Books" textAlignment="RIGHT" textFill="WHITE">
+                     <padding>
+                        <Insets bottom="10.0" top="10.0" />
+                     </padding>
+                     <font>
+                        <Font name="Euphemia UCAS" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="bookManage" contentDisplay="TOP" minWidth="210.0" mnemonicParsing="false" onAction="#goToBookManage" prefWidth="210.0" style="-fx-background-color: transparent;" text="Book manage" textFill="#fffbfb">
+                     <font>
+                        <Font name="Euphemia UCAS" size="14.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" top="10.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="userManage" contentDisplay="TOP" minWidth="210.0" mnemonicParsing="false" onAction="#goToUserManage" prefWidth="210.0" style="-fx-background-color: transparent;" text="User manage" textFill="#fffbfb">
+                     <font>
+                        <Font name="Euphemia UCAS" size="14.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" top="10.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="registerBooks" contentDisplay="TOP" minWidth="210.0" mnemonicParsing="false" onAction="#goToRegisterBooks" prefWidth="210.0" style="-fx-background-color: transparent;" text="Register books" textFill="#fffbfb">
+                     <font>
+                        <Font name="Euphemia UCAS" size="14.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" top="10.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="registerUser" contentDisplay="TOP" minWidth="210.0" mnemonicParsing="false" onAction="#goToRegisterUser" prefWidth="210.0" style="-fx-background-color: transparent;" styleClass="active" stylesheets="@../../css/style.css" text="Register user" textFill="#fffbfb">
+                     <font>
+                        <Font name="Euphemia UCAS" size="14.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" top="10.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="search" contentDisplay="TOP" minWidth="210.0" mnemonicParsing="false" onAction="#goToEmployeeSearch" prefWidth="210.0" style="-fx-background-color: transparent;" text="Search" textFill="#fffbfb">
+                     <font>
+                        <Font name="Euphemia UCAS" size="14.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" top="10.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+         </left>
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <GridPane layoutX="78.0" layoutY="44.0" prefHeight="386.0" prefWidth="657.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="323.85101318359375" minWidth="10.0" prefWidth="188.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="484.699462890625" minWidth="10.0" prefWidth="469.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints maxHeight="39.0" minHeight="10.0" prefHeight="39.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="39.0" minHeight="10.0" prefHeight="39.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="47.0" minHeight="10.0" prefHeight="43.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="47.0" minHeight="10.0" prefHeight="42.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="44.0" minHeight="10.0" prefHeight="39.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="44.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="52.0" minHeight="0.0" prefHeight="44.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="34.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="44.0" minHeight="10.0" prefHeight="33.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="37.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Text fill="#403f3f" strokeType="OUTSIDE" strokeWidth="0.0" text="Last name" GridPane.rowIndex="1" />
+                        <TextField fx:id="lastNameT" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Text fill="#403f3f" strokeType="OUTSIDE" strokeWidth="0.0" text="SSN(Social Security Number)" GridPane.rowIndex="2" />
+                        <Text fill="#403f3f" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" GridPane.rowIndex="3" />
+                        <Text fill="#403f3f" strokeType="OUTSIDE" strokeWidth="0.0" text="Telephone number" GridPane.rowIndex="6" />
+                        <TextField fx:id="ssnT" promptText="ÅÅMMDDXXXX" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <TextField fx:id="passwdT" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <TextField fx:id="telT" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                        <TextField fx:id="firstNameT" GridPane.columnIndex="1" />
+                        <Text fill="#403f3f" strokeType="OUTSIDE" strokeWidth="0.0" text="First name" />
+                        <Text fill="#403f3f" strokeType="OUTSIDE" strokeWidth="0.0" text="Address" GridPane.rowIndex="7" />
+                        <Text fill="#403f3f" strokeType="OUTSIDE" strokeWidth="0.0" text="E-mail" GridPane.rowIndex="8" />
+                        <TextField fx:id="addressT" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                        <TextField fx:id="emailT" promptText="nackademin@nackademin.se" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                        <Text fill="#403f3f" strokeType="OUTSIDE" strokeWidth="0.0" text="User category" GridPane.rowIndex="4" />
+                        <RadioButton fx:id="employee" mnemonicParsing="false" prefHeight="30.0" prefWidth="114.0" text="Employee" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="userCat" />
+                           </toggleGroup>
+                        </RadioButton>
+                        <RadioButton fx:id="visitor" mnemonicParsing="false" text="Visitor" toggleGroup="$userCat" translateX="110.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                     </children>
+                  </GridPane>
+                  <Button fx:id="regiBtn" layoutX="642.0" layoutY="438.0" mnemonicParsing="false" onAction="#actionRegister" prefHeight="33.0" prefWidth="74.0" style="-fx-background-color: #ce5f5f#ce5f5f;" text="Register" textFill="WHITE">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets></Button>
+                  <Text fill="#4d4d4d" layoutX="348.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Register Users" wrappingWidth="155.31640625">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Text>
+                  <Text fx:id="message" fill="RED" layoutX="78.0" layoutY="458.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="515.9831027984619" />
+               </children>
+            </AnchorPane>
+         </center></BorderPane>
+   </children>
+</AnchorPane>
